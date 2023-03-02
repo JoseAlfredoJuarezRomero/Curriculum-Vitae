@@ -1,0 +1,179 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    }
+body{
+    font-size: 16px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Fuentes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+*{
+    font-family: 'Tilt Neon', cursive;
+    font-family: 'Tilt Warp', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Presentar fotografía, ubicación en googlemaps de dirección
+Mostrar datos personales, datos académicos y experiencia laboral
+Incluir video de presentación*/
+
+/* ESTO ES PARA AMBOS COLUMNAS */
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+/* Este es el lado izquierdo (AZUL) */
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.ProfileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: rgba(255, 255, 255, 0.2);
+}
+.ProfileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.mapa{
+    overflow:hidden;
+    padding-bottom:80%;
+    position:relative;
+    height:0;
+}
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* Esto es para ajustar la imagen dentro del circulo formado en la parte de arriba. (Para que
+quede lo mas centrado posible 
+.ProfileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+.ProfileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.ProfileText span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contacinfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contacinfo ul{
+    position: relative;
+}
+.contacinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contacinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4; 
+}
+.text{
+    color: #fff;
+    font-weight: 300;
+
+}
+/* Información de contacto con la información escolar */
+.contacinfo.education li{
+    margin-bottom: 15px;
+    
+}
+
+/* Modificacion a todos los h5, verificar despues porque no lo permite desde .contacinfo */
+h5{
+    color:#03a9f4
+    
+}
+h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+h3{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+/* Este es el lado izquierdo (BLANCO) */
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #003147;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.box.year_company{
+    min-width: 2000px;
+
+}
